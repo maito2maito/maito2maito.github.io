@@ -1,0 +1,107 @@
+/* Perustyyli */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Waden Portfolio -otsikko (musta hohto) */
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Waltteri Miikkulainen -otsikko (musta hohto) */
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black;
+}
+
+.skills, .projects, .school-projects {
+    margin-top: 30px;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: #00bcd4;
+    border-bottom: 3px solid #00bcd4;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.skills ul, .projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li, .projects li {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.project {
+    margin-top: 20px;
+    padding: 15px;
+    background: #2a2a2a;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.project a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background: #00bcd4;
+    color: #121212;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: #008ba3;
+    color: #ffffff;
+}
