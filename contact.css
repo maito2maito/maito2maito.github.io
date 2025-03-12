@@ -1,0 +1,98 @@
+/* Instagram logo */
+.instagram-logo img {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover-efekti Instagramille */
+.instagram-logo:hover img {
+    transform: scale(1.1);
+}
+
+/* Varmistetaan, että kaikki kuvat skaalaavat järkevästi */
+img {
+    max-width: 100%; /* Varmistaa, että kuva ei mene yli vanhemman elementin koon */
+    height: auto; /* Kuvan korkeus säilyttää suhteensa leveyteen */
+    display: block; /* Poistaa ylimääräisen välin, joka tulee inline-elementeistä */
+    margin: 0 auto; /* Keskittää kuvat, jos ne eivät ole leveämpiä kuin niiden säiliö */
+}
+
+/* Säilytetään kuvat responsiivisina (muutetaan kuvakoko dynaamisesti) */
+.project-card img {
+    width: 100%; /* Täyttää kortin leveys kokonaan */
+    max-width: 552px; /* Varmistetaan, että kuva ei kasva yli määritellyn koon */
+    height: auto; /* Korkeus skaalautuu automaattisesti leveyden mukaan */
+}
+
+/* Pienennetään kuvia vielä pienemmillä näyttöillä */
+@media (max-width: 768px) {
+    .project-card img {
+        width: 90%; /* Kuvan leveys pienenee 90%:iin näytön leveydestä */
+        max-width: none; /* Ei rajoiteta enimmäisleveyttä */
+    }
+}
+
+/* Erittäin pienet näytöt, kuten älypuhelimet */
+@media (max-width: 480px) {
+    .project-card img {
+        width: 100%; /* Kuvan leveys täyttää 100% näytöstä */
+    }
+}
+/* LinkedIn-kuvan koko */
+.linkedin-logo img {
+    width: 50px; /* Määrittää kuvan leveydeksi 50px */
+    height: auto; /* Kuvan korkeus säilyttää suhteensa leveyteen */
+}
+/* Asetetaan containerin sisältö flexboxiksi */
+#contact {
+    display: flex;              /* Käytetään flexbox-asettelua */
+    flex-direction: column;     /* Sisältö tulee pystysuunnassa */
+    align-items: center;        /* Keskitetään sisällön vaakasuunnassa */
+    text-align: center;         /* Varmistetaan, että teksti on keskitetty */
+    padding: 20px;
+}
+
+/* LinkedIn-kuvan koko */
+.linkedin-logo img {
+    width: 50px;  /* Kuvan leveys */
+    height: auto; /* Kuvan korkeus suhteessa leveyteen */
+    margin-right: 15px; /* Vähän väliä kuvan oikealle puolelle */
+    margin-top: 20px;  /* Etäisyys sähköpostista */
+}
+
+/* Instagram-kuvan asettaminen */
+.instagram-logo img {
+    width: 50px;  /* Kuvan leveys */
+    height: auto; /* Kuvan korkeus suhteessa leveyteen */
+    margin-top: 20px;  /* Etäisyys LinkedIn-kuvasta */
+}
+/* Asetetaan yhteinen tyyli koko contact-osioon */
+#contact {
+    display: flex;
+    flex-direction: column;     /* Kohdistetaan sisältö pystysuunnassa */
+    align-items: flex-start;    /* Kohdistetaan vasempaan laitaan */
+    text-align: left;           /* Teksti vasemmalle */
+    padding: 20px;
+}
+
+/* Sähköpostilinkki ja muut tekstit vasemmalle */
+#contact p {
+    margin: 10px 0;  /* Etäisyys sähköpostin ympäriltä */
+}
+
+/* LinkedIn-kuvan asettaminen vasempaan laitaan */
+.linkedin-logo img {
+    width: 50px;   /* Kuvan leveys */
+    height: auto;  /* Kuvan korkeus suhteessa leveyteen */
+    margin-top: 10px; /* Etäisyys sähköpostista */
+    margin-right: 10px; /* Väli LinkedIn-kuvan ja seuraavan kuvan välillä */
+}
+
+/* Instagram-kuvan asettaminen vasempaan laitaan */
+.instagram-logo img {
+    width: 50px;   /* Kuvan leveys */
+    height: auto;  /* Kuvan korkeus suhteessa leveyteen */
+    margin-top: 10px; /* Etäisyys LinkedIn-kuvasta */
+}

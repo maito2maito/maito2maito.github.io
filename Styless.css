@@ -1,107 +1,139 @@
-/* Perustyyli */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #121212;
-    color: #ffffff;
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
-    line-height: 1.6;
-}
-
-/* Waden Portfolio -otsikko (musta hohto) */
-header {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+  
+  /* Navigaatiopalkki */
+  nav {
     background-color: #1f1f1f;
-    padding: 20px;
-    font-size: 2em;
+    color: white;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  }
+  
+  .nav-left {
+    font-size: 1.2em;
     font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black;
-}
-
-.container {
+  }
+  
+  .nav-right a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-right a:hover {
+    color: #00bcd4;
+  }
+  
+  /* About Me -osio */
+  .about {
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #1e1e1e;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    margin-top: 30px;
+    border-radius: 10px;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  /* Tiedot-osio */
+  .info-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
     max-width: 1000px;
     margin: auto;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  
+  .info-box {
+    background-color: #1e1e1e;
     padding: 20px;
-}
-
-/* Waltteri Miikkulainen -otsikko (musta hohto) */
-h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #ffffff;
-    text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black;
-}
-
-.skills, .projects, .school-projects {
-    margin-top: 30px;
-    padding: 20px;
-    background: #1e1e1e;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-h2 {
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .info-box h3 {
+    margin-bottom: 10px;
     color: #00bcd4;
-    border-bottom: 3px solid #00bcd4;
-    display: inline-block;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
-    font-size: 1.8em;
-}
-
-.skills ul, .projects ul {
+  }
+  
+  /* Poistaa pisteet listoista */
+  .info-box ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+  }
+  
+  .info-box li {
+    margin-bottom: 8px;
+    color: #dddddd;
+  }
+
+
+
+  /* Projektilistaus tyylit */
+  .projects-container {
+    display: flex;
+    flex-direction: column; /* tämä tekee pelit allekkain */
+    align-items: center;    /* keskittää kortit sivusuunnassa */
+    gap: 20px;
+    padding: 20px;
+  }
+
+.project-card {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 600px;
 }
 
-.skills li, .projects li {
-    margin: 10px 0;
-    font-size: 1.2em;
+.project-card h3 {
+  margin-bottom: 10px;
 }
 
-.project {
-    margin-top: 20px;
-    padding: 15px;
-    background: #2a2a2a;
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: left;
+.project-card iframe {
+  border-radius: 5px;
+  width: 100%;
 }
 
-.project:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+.project-card .btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #444;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
-.project a {
-    color: #00bcd4;
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
-    font-size: 1.1em;
+.project-card .btn:hover {
+  background-color: #666;
 }
-
-.project a:hover {
-    text-decoration: underline;
-}
-
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 15px;
-    background: #00bcd4;
-    color: #121212;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-}
-
-.button:hover {
-    background: #008ba3;
-    color: #ffffff;
-}
+  
